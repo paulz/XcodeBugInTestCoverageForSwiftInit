@@ -10,6 +10,7 @@
 		4B8C084020C1EB38006BFBEF /* BugCoverageSwiftInit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8C083620C1EB38006BFBEF /* BugCoverageSwiftInit.framework */; };
 		4B8C084520C1EB38006BFBEF /* BugCoverageSwiftInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8C084420C1EB38006BFBEF /* BugCoverageSwiftInitTests.swift */; };
 		4B8C084720C1EB38006BFBEF /* BugCoverageSwiftInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8C083920C1EB38006BFBEF /* BugCoverageSwiftInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B8C085120C1EB74006BFBEF /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8C085020C1EB74006BFBEF /* Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4B8C083F20C1EB38006BFBEF /* BugCoverageSwiftInitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugCoverageSwiftInitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8C084420C1EB38006BFBEF /* BugCoverageSwiftInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugCoverageSwiftInitTests.swift; sourceTree = "<group>"; };
 		4B8C084620C1EB38006BFBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8C085020C1EB74006BFBEF /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8C083920C1EB38006BFBEF /* BugCoverageSwiftInit.h */,
+				4B8C085020C1EB74006BFBEF /* Sample.swift */,
 				4B8C083A20C1EB38006BFBEF /* Info.plist */,
 			);
 			path = BugCoverageSwiftInit;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					4B8C083520C1EB38006BFBEF = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					4B8C083E20C1EB38006BFBEF = {
 						CreatedOnToolsVersion = 9.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8C085120C1EB74006BFBEF /* Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		4B8C084B20C1EB38006BFBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = paulz.github.io.BugCoverageSwiftInit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		4B8C084C20C1EB38006BFBEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		4B8C084E20C1EB38006BFBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35KC7LV9BL;
 				INFOPLIST_FILE = BugCoverageSwiftInitTests/Info.plist;
@@ -407,6 +416,7 @@
 		4B8C084F20C1EB38006BFBEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35KC7LV9BL;
 				INFOPLIST_FILE = BugCoverageSwiftInitTests/Info.plist;
