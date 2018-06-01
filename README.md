@@ -1,4 +1,4 @@
-# XcodeBugInTestCoverageForSwiftInit
+# Xcode Bug In Test Coverage for Swift init() methods
 
 Sample Xcode project demonstrating a Bug In Test Coverage For Swift Init methods
 
